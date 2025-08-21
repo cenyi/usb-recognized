@@ -550,11 +550,18 @@ const Index = () => {
 
           <footer className="mt-6 pt-4 border-t border-gray-200">
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <a href="/privacy-policy" title="How we protect your USB device data and privacy with our USB recognition tool" className="text-gray-600 hover:text-gray-900 text-sm">USB Recognition Privacy Policy</a>
-              <a href="/terms-of-service" title="USB recognition tool usage agreement and guidelines for USB device diagnostics" className="text-gray-600 hover:text-gray-900 text-sm">USB Recognition Terms of Service</a>
-              <a href="/about-us" title="Learn more about our USB device recognition team and mission" className="text-gray-600 hover:text-gray-900 text-sm">About USB Device Recognition</a>
-              <a href="/contact" title="Get in touch with our USB support team for device recognition help" className="text-gray-600 hover:text-gray-900 text-sm">Contact USB Recognition Support</a>
+              <a href="/privacy-policy" title="How we protect your USB device data and privacy with our USB recognition tool" className="text-gray-600 hover:text-gray-900 text-sm">Privacy Policy</a>
+              <a href="/terms-of-service" title="USB recognition tool usage agreement and guidelines for USB device diagnostics" className="text-gray-600 hover:text-gray-900 text-sm">Terms of Service</a>
+              <a href="/about-us" title="Learn more about our USB device recognition team and mission" className="text-gray-600 hover:text-gray-900 text-sm">About Us</a>
+              <a href="/contact" title="Get in touch with our USB support team for device recognition help" className="text-gray-600 hover:text-gray-900 text-sm">Contact</a>
             </div>
+            
+            <div className="flex justify-center my-4">
+              <a href="https://www.buymeacoffee.com/moca" target="_blank" rel="noopener noreferrer" title="Support our USB recognition tool development">
+                <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174" className="rounded-md shadow-sm hover:shadow transition-shadow" />
+              </a>
+            </div>
+            
             <p className="text-center text-gray-500 text-xs">
               &copy; {new Date().getFullYear()} USBRecognized.com - USB Device Recognition Tool - All rights reserved. USB device data is processed locally in your browser.
             </p>

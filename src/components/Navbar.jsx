@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Sun, Palette, Menu, X, Search } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { navItems } from '../nav-items.jsx';
 
 const Navbar = () => {
   // Available themes: light, sepia
@@ -65,12 +66,13 @@ const Navbar = () => {
     }
   };
 
-  // Navigation items
-  const navItems = [
-    { href: '/', title: 'Home - USB Recognition Software', label: 'Home' },
-    { href: '/blog', title: 'USB Blog - Latest articles and guides', label: 'Blog' },
-    { href: '/usb-not-recognized', title: 'USB troubleshooting guide - Fix device recognition issues', label: 'Troubleshooting' },
-  ];
+  // Filter navigation items for main navigation
+  const mainNavItems = navItems.filter(item => 
+    ['Home', 'Troubleshooting', 'Blog'].includes(item.title)
+  );
+  
+  // Filter navigation items for mobile menu
+  const mobileNavItems = navItems;
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${theme === 'light' ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-amber-50/90 backdrop-blur-sm shadow-amber-100'} border-b border-gray-200`}>
@@ -88,16 +90,16 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center space-x-1">
-                {navItems.map((item) => (
-                  <NavigationMenuItem key={item.href}>
+                {mainNavItems.map((item) => (
+                  <NavigationMenuItem key={item.to}>
                     <NavigationMenuLink 
-                      href={item.href} 
+                      href={item.to} 
                       className={cn(navigationMenuTriggerStyle(), "px-4 py-2 rounded-lg transition-all duration-300 font-medium", 
                         "hover:bg-blue-50 hover:text-blue-700",
                         "data-[active=true]:bg-blue-100 data-[active=true]:text-blue-800")}
-                      title={item.title}
+                      title={item.tooltip || item.title}
                     >
-                      {item.label}
+                      {item.title}
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
@@ -166,15 +168,16 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <nav className="flex flex-col space-y-2 bg-white/80 backdrop-blur-sm rounded-lg p-2 shadow-lg">
-              {navItems.map((item) => (
+              {mobileNavItems.map((item) => (
                 <a
-                  key={item.href}
-                  href={item.href}
+                  key={item.to}
+                  href={item.to}
                   className="px-4 py-3 rounded-md hover:bg-blue-50 text-gray-800 font-medium transition-colors duration-200 flex items-center"
-                  title={item.title}
+                  title={item.tooltip || item.title}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <span className="ml-2">{item.label}</span>
+                  {item.icon}
+                  <span className="ml-2">{item.title}</span>
                 </a>
               ))}
             </nav>

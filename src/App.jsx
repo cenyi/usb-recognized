@@ -33,7 +33,8 @@ const App = () => (
           <Route path="/usb-not-recognized/enhanced" element={<EnhancedTroubleshooting />} />
           
           {/* Additional pages */}
-          <Route path="/about" element={<AboutUs />} />
+          {/* Redirect for compatibility with sitemap and external links */}
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
