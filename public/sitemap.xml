@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://usbrecognized.com/</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://usbrecognized.com/favicon.png</image:loc>
+      <image:title>USB Recognition Tool Logo</image:title>
+      <image:caption>Free online USB device recognition tool</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/usb-not-recognized</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog/usb-protocol-evolution-history</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>USB Recognized</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-21</news:publication_date>
+      <news:title><![CDATA[USB Protocol Evolution: From 1.0 to USB4 - A Complete Technical Journey]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog/usb-c-complexity-explained</loc>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>USB Recognized</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-20</news:publication_date>
+      <news:title><![CDATA[Why is USB-C So Complex? Understanding the Universal Connector]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog/enterprise-usb-troubleshooting-case-study</loc>
+    <lastmod>2025-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>USB Recognized</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-19</news:publication_date>
+      <news:title><![CDATA[Case Study: How We Solved USB Issues for 500+ Corporate Workstations]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog/usb-device-lifespan-maintenance</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>USB Recognized</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-18</news:publication_date>
+      <news:title><![CDATA[5 Secrets to Extend USB Device Lifespan: Maintenance Tips You Never Knew]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog/usb-buying-guide-2025</loc>
+    <lastmod>2025-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>USB Recognized</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-17</news:publication_date>
+      <news:title><![CDATA[USB Device Buying Guide 2025: 10 Critical Factors Before You Purchase]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/blog/photographer-usb-workflow-optimization</loc>
+    <lastmod>2025-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>USB Recognized</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-16</news:publication_date>
+      <news:title><![CDATA[Photographer's USB Workflow: Optimize Your Camera-to-Computer Transfer]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/about-us</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/contact</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/privacy-policy</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://usbrecognized.com/terms-of-service</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

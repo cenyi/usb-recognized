@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Sitemap: https://usbrecognized.com/sitemap.xml
+
+# Disallow crawling of admin or sensitive areas
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /scripts/
+
+# Allow all other content
+Allow: /blog/
+Allow: /usb-not-recognized
+Allow: /about-us
+Allow: /contact
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

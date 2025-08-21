@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Blog content styles */
+.blog-content {
+  @apply text-gray-800 leading-relaxed;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4 border-b-2 border-blue-200 pb-2;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold text-gray-800 mt-6 mb-3;
+}
+
+.blog-content h4 {
+  @apply text-lg font-medium text-gray-700 mt-4 mb-2;
+}
+
+.blog-content p {
+  @apply mb-4 text-gray-700 leading-7;
+}
+
+.blog-content ul {
+  @apply mb-4 ml-6 space-y-2;
+}
+
+.blog-content ol {
+  @apply mb-4 ml-6 space-y-2;
+}
+
+.blog-content li {
+  @apply text-gray-700 leading-6;
+}
+
+.blog-content ul li {
+  @apply list-disc;
+}
+
+.blog-content ol li {
+  @apply list-decimal;
+}
+
+.blog-content strong {
+  @apply font-semibold text-gray-900;
+}
+
+.blog-content code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+}
+
+.blog-content a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+
+.blog-content table {
+  @apply w-full border-collapse border border-gray-300 my-6;
+}
+
+.blog-content th {
+  @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold;
+}
+
+.blog-content td {
+  @apply border border-gray-300 px-4 py-2;
+}
+
+/* Warning box styles */
+.blog-content .warning-yellow {
+  @apply bg-yellow-50 border-l-4 border-yellow-400 p-4 my-4 rounded-r;
+}
+
+.blog-content .warning-red {
+  @apply bg-red-50 border-l-4 border-red-400 p-4 my-4 rounded-r;
+}
+
+.blog-content .warning-blue {
+  @apply bg-blue-50 border-l-4 border-blue-400 p-4 my-4 rounded-r;
+}
+
+.blog-content .warning-green {
+  @apply bg-green-50 border-l-4 border-green-400 p-4 my-4 rounded-r;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .blog-content {
+    @apply text-sm;
+  }
+  
+  .blog-content h2 {
+    @apply text-xl;
+  }
+  
+  .blog-content h3 {
+    @apply text-lg;
+  }
+  
+  .blog-content table {
+    @apply text-sm;
+  }
+}
